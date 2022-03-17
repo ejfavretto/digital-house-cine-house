@@ -1,3 +1,8 @@
+/**
+ * Digital house
+ * Exercicio cine house
+ */
+
 const filmes = require('./database/db.json')
 
 function listarFilmes() {
