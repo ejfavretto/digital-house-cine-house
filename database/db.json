@@ -19,7 +19,7 @@
     "Title":"Hulk",
     "Year":2003,
     "Runtime": 138,
-    "Genre":["Action", "Sci-Fi"],
+    "Genre":["Action"],
     "Actors":["Eric Bana", "Jennifer Connelly", "Sam Elliott"],
     "onDisplay":false
   }
