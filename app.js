@@ -7,7 +7,7 @@
 const filmes = require('./database/db.json')
 
 /**
- * Funções
+ * Área de Funções
  */
 
 /**
@@ -47,7 +47,14 @@ function eliminarFilme(posicaoFilme) {
   return filmes.splice(posicaoFilme, 1)
 }
 
-/* Executando as funções */
+/**
+
+
+
+/**
+ * Área de execução das funções
+ */
+
 console.log('Todos os filmes')
 console.log(listarFilmes())
 
