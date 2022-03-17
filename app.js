@@ -3,12 +3,26 @@
  * Exercicio cine house
  */
 
+/* referenciando os dados de filmes */
 const filmes = require('./database/db.json')
 
+/**
+ * Funções
+ */
+
+/**
+ *
+ * @returns todos os filmes
+ */
 function listarFilmes() {
   return filmes.map(filme => filme.Title + ' - ' + filme.Runtime)
 }
 
+/**
+ *
+ * @param {*} titulo
+ * @returns caso encontre o filme, retorna um objeto com os dados do filme, caso contrario um objeto em branco
+ */
 function buscarFilmePeloTitulo(titulo) {
   let filme = filmes.filter(filme => filme.Title === titulo)
   return filme.length > 0 ? filme[0] : {}
@@ -33,6 +47,7 @@ function eliminarFilme(posicaoFilme) {
   return filmes.splice(posicaoFilme, 1)
 }
 
+/* Executando as funções */
 console.log('Todos os filmes')
 console.log(listarFilmes())
 
